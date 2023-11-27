@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ conferenciaDetail.name }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+        <!-- IMAGE IF -->
+      </div>
+    </div>
+    <div class="col">
+      <dl>
+        <dt>More about</dt>
+        <br>
+        <dd *ngIf="!conferenciaDetail">No available information</dd>
+        <dt>Venue</dt>
+        <dd>{{ conferenciaDetail.venue}}</dd>
+        <hr />
+        <dt>description</dt>
+        <dd>{{ conferenciaDetail.description}}</dd>
+        <hr />
+      </dl>
+    </div>
+  </div>
+ </div>
